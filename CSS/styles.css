@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Cor de fundo branca */
+    font-family: 'Roboto', sans-serif; /* Aplicando a fonte Roboto em todo o documento */    
+  }
+  /*COMEÇO DO HEADER */
+  header {
+    background-color: #ffffff;
+    color: #F2B441; /* Texto em amarelo */
+    padding: 65px 0;
+    border-radius: 3px; /* Bordas arredondadas no elemento selecionado */
+    box-shadow: inset 0px 0px 15px #F2B441; /* Sombra interna na cor rgba(230, 205, 152, 1) */
+    position: fixed; /* Deixa o header fixo */    
+    width: 100%; /* Define a largura do header como 100% da janela */
+    z-index: 999; /* Adicionamos um z-index alto para que o header fique sobre os demais elementos */
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 20px;
+    position: relative; /* Adicionamos posição relativa ao item do menu para posicionar o ::before */
+  }
+  
+  nav li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    display: inline-block; /* Adicionamos para permitir ajustar a largura do pseudo-elemento */
+    position: relative; /* Adicionamos novamente para evitar bugs de posicionamento */
+  }
+  
+  /* Efeito da linha aparecendo da esquerda para a direita abaixo da opção */
+  nav li a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Posicionamos a linha 5 pixels abaixo do texto (ajuste conforme necessário) */
+    left: 0;
+    width: 100%; /* Ajustamos a largura para cobrir toda a largura do link */
+    height: 2px;
+    background-color: #F2B441; /* Cor amarela da linha */
+    transform: scaleX(0); /* Adicionamos uma escala horizontal para fazer a linha aparecer gradualmente */
+    transform-origin: left; /* Definimos a origem da transformação à esquerda */
+    transition: transform 0.3s ease; /* Adicionando uma transição suave na transformação */
+  }
+  /* Efeito da linha fixa no link selecionado */
+nav li.selected a::before {
+    transform: scaleX(1); /* Mantém a linha fixa no link selecionado */
+  }
+  nav li a:hover::before {
+    transform: scaleX(1); /* Faz a linha aparecer da esquerda para a direita */
+  }
+/* FIM DO HEADER */
+
+/* COMEÇO DA PRIMEIRA PARTE */
+/* Estilos para a seção principal com a imagem e o texto */
+.main-section {
+  background-color: #f0b43c; /* Cor de fundo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 180px;    
+  
+}
+
+.image {
+  /* Defina as dimensões da imagem desejada */  
+  margin-left: -450px;
+}
+
+.text {
+  color: #961c17; /* Cor do texto */
+  padding: 20px;  
+}
+
+.text h1 {
+  font-size: 48px;
+  font-weight: 900; /* Deixar a letra ainda mais grossa */
+  margin: -10px;
+  margin-left: 10px;
+  margin-bottom: 25px; /* Ajuste a margem inferior para posicionar o texto um pouco mais acima */  
+}
+
+.text p {
+  font-size: 18px;
+  margin: 0;
+  margin-left: 13px;
+  font-weight: 900;
+}
+/* FIM DA PRIMEIRA PARTE */
+
+/* Estilos para os cards */
+.card {
+  width: 350px;
+  height: 350px;
+  background-color: #fff; /* Cor de fundo dos cards */
+  border: 2px solid; /* Borda dos cards */
+  text-align: center;
+  padding: 10px;
+  margin: 60px 20px 75px!important; /* Espaçamento horizontal entre os cards */
+  display: flex; /* Alinha os elementos do card em linha */
+  flex-direction: column; /* Alinha os elementos verticalmente dentro do card */
+  justify-content: center; /* Alinha verticalmente os elementos dentro do card */
+}
+
+.card-section {
+  display: flex; /* Alinha os cards lado a lado */
+  justify-content: center; /* Alinha os cards ao centro */
+  margin-top: 20px; /* Ajuste o espaçamento entre a seção de cards e o conteúdo acima */
+}
+
+.card img {
+  width: 150px; /* Tamanho das imagens dentro dos cards */
+  height: 150px;
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  margin-bottom: 25px; /* Espaçamento entre a imagem e o texto */
+}
+
+.card-section h2 {
+  font-size: 24px;
+  font-weight: 900; /* Deixar a letra ainda mais grossa */
+  margin: -10px;
+  margin-left: 10px;  
+}
+
+/* COMEÇO SOBRE NOS */
+/* Estilos para a seção principal com a imagem e o texto */
+.sobrenos {
+  background-color: #F2B441;/* Cor de fundo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px;      
+}
+
+.imagemSbn {
+  /* Defina as dimensões da imagem desejada */  
+  margin-left: -10px;
+}
+
+.textSbn {
+  flex: 1; /* Ocupa o espaço restante da div */
+  max-width: 800px; /* Largura máxima da div interna */   
+  color: #961c17; /* Cor do texto */
+  padding: 0px 80px 80px;
+  background-color: #E6CD98;
+}
+
+.textSbn h1 {
+  font-size: 62px;
+  font-weight: 900; /* Deixar a letra ainda mais grossa */
+  margin-top: 100px;  
+  margin-bottom: 0px; /*Ajuste a margem inferior para posicionar o texto um pouco mais acima*/
+}
+
+.textSbn p {
+  font-size: 24px;  
+  font-weight: 900; /* Deixar a letra ainda mais grossa */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 70px;   
+  text-align: justify;
+  font-weight: bold;
+}
+/* FIM DO SOBRE NÓS */
+
+/* CSS geral para todos os dispositivos */
+.nossosPrinc {
+  box-shadow: rgb(234, 176, 60) 0 0 11px 0;
+  border-color: rgba(234, 176, 60, 1);
+  margin-top: -50px;  
+}
+.nossosPrinc h2{
+  font-size: 60px;
+  font-weight: 900; /* Deixar a letra ainda mais grossa */
+  text-align: center;  
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */  
+  display: flex;  
+}
