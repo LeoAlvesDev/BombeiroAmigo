@@ -1,2 +1,0 @@
-# bombamigo
-# bomb
