@@ -8,7 +8,7 @@ body {
   header {
     background-color: #ffffff;
     color: #F2B441; /* Texto em amarelo */
-    padding: 65px 0;
+    padding: 50px 0;
     border-radius: 3px; /* Bordas arredondadas no elemento selecionado */
     box-shadow: inset 0px 0px 15px #F2B441; /* Sombra interna na cor rgba(230, 205, 152, 1) */
     position: fixed; /* Deixa o header fixo */    
@@ -66,13 +66,14 @@ nav li.selected a::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 180px;    
+  padding-top: 0px;    
   
 }
 
 .image {
   /* Defina as dimensões da imagem desejada */  
-  margin-left: -450px;
+  margin-left: -150px;
+  margin-top: 100px;
 }
 
 .text {
@@ -98,8 +99,8 @@ nav li.selected a::before {
 
 /* Estilos para os cards */
 .card {
-  width: 350px;
-  height: 350px;
+  width: 250px;
+  height: 250px;
   background-color: #fff; /* Cor de fundo dos cards */
   border: 2px solid; /* Borda dos cards */
   text-align: center;
@@ -113,18 +114,18 @@ nav li.selected a::before {
 .card-section {
   display: flex; /* Alinha os cards lado a lado */
   justify-content: center; /* Alinha os cards ao centro */
-  margin-top: 20px; /* Ajuste o espaçamento entre a seção de cards e o conteúdo acima */
+  margin-top: 0px; /* Ajuste o espaçamento entre a seção de cards e o conteúdo acima */
 }
 
 .card img {
   width: 150px; /* Tamanho das imagens dentro dos cards */
   height: 150px;
   margin: 0 auto; /* Centraliza a imagem horizontalmente */
-  margin-bottom: 25px; /* Espaçamento entre a imagem e o texto */
+  margin-top: -75px; /* Espaçamento entre a imagem e o texto */
 }
 
 .card-section h2 {
-  font-size: 24px;
+  font-size: 19px;
   font-weight: 900; /* Deixar a letra ainda mais grossa */
   margin: -10px;
   margin-left: 10px;  
@@ -172,17 +173,49 @@ nav li.selected a::before {
 }
 /* FIM DO SOBRE NÓS */
 
-/* CSS geral para todos os dispositivos */
 .nossosPrinc {
   box-shadow: rgb(234, 176, 60) 0 0 11px 0;
   border-color: rgba(234, 176, 60, 1);
   margin-top: -50px;  
 }
 .nossosPrinc h2{
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 900; /* Deixar a letra ainda mais grossa */
   text-align: center;  
   align-items: center; /* Centraliza o conteúdo verticalmente */
   justify-content: center; /* Centraliza horizontalmente */  
   display: flex;  
+  padding: 15px 0px 10px;
+}
+/* Estilos para os cards */
+.cardprin {
+  width: 280px; /*LARGURA DOS CARDS*/
+  height: 320px; /*ALTURA DOS CARDS*/
+  background-color: #fff; /* Cor de fundo dos cards */
+  border: 1px solid; /* Borda dos cards */
+  border-radius: 10px; /* Bordas arredondadas no elemento selecionado */
+  text-align: center;  
+  margin: 0px 7px 75px!important; /* Espaçamento horizontal entre os cards */
+  display: flex; /* Alinha os elementos do card em linha */
+  flex-direction: column; /* Alinha os elementos verticalmente dentro do card */
+  justify-content: center; /* Alinha verticalmente os elementos dentro do card */
+}
+
+.cardprin-section {
+  display: flex; /* Alinha os cards lado a lado */
+  justify-content: center; /* Alinha os cards ao centro */  
+}
+
+.cardprin img {
+  width: 150px; /* Tamanho das imagens dentro dos cards */
+  height: 150px;
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  margin-top: -75px; /* Espaçamento entre a imagem e o texto */
+}
+
+.cardprin-section h2 {
+  font-size: 19px;
+  font-weight: 900; /* Deixar a letra ainda mais grossa */
+  margin: -10px;
+  margin-left: 10px;  
 }
